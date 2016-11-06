@@ -62,6 +62,7 @@
 //        }
 //    }];
     
+    
     [login logInWithReadPermissions:@[@"public_profile"] fromViewController:[SSControllerManager topMostController] handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
         if (error) {
             _auth = NO;
