@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FBSDKHelper.h"
 
 @interface ViewController ()
 
@@ -25,5 +26,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)facebookClick:(id)sender {
+    [[FBSDKHelper sharedInstance] authSuccess:^{
+        
+    } fail:^(NSError *error) {
+        
+    }];
+}
+
+- (IBAction)twitterClick:(id)sender {
+}
 
 @end

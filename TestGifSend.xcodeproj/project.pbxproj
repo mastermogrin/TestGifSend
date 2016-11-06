@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C0F5A50D6A6A8887C6685DB0 /* libPods-TestGifSend.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 180BCE99A45AD6A8FB7D402B /* libPods-TestGifSend.a */; };
 		E7360F0F1DCF4903006EBA9B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7360F0E1DCF4903006EBA9B /* main.m */; };
 		E7360F121DCF4903006EBA9B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7360F111DCF4903006EBA9B /* AppDelegate.m */; };
 		E7360F151DCF4903006EBA9B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7360F141DCF4903006EBA9B /* ViewController.m */; };
@@ -14,6 +15,8 @@
 		E7360F1A1DCF4903006EBA9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7360F191DCF4903006EBA9B /* Assets.xcassets */; };
 		E7360F1D1DCF4903006EBA9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7360F1B1DCF4903006EBA9B /* LaunchScreen.storyboard */; };
 		E7360F281DCF4903006EBA9B /* TestGifSendUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7360F271DCF4903006EBA9B /* TestGifSendUITests.m */; };
+		E7360F341DCF4993006EBA9B /* FBSDKHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E7360F331DCF4993006EBA9B /* FBSDKHelper.m */; };
+		E7360F371DCF4A5B006EBA9B /* SSControllerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E7360F361DCF4A5B006EBA9B /* SSControllerManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180BCE99A45AD6A8FB7D402B /* libPods-TestGifSend.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestGifSend.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B1F8BB5F3A9C0A7B26A26CC /* Pods-TestGifSend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGifSend.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestGifSend/Pods-TestGifSend.debug.xcconfig"; sourceTree = "<group>"; };
+		A79D4AD21165F68E63551690 /* Pods-TestGifSend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestGifSend.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestGifSend/Pods-TestGifSend.release.xcconfig"; sourceTree = "<group>"; };
 		E7360F0A1DCF4903006EBA9B /* TestGifSend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestGifSend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7360F0E1DCF4903006EBA9B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E7360F101DCF4903006EBA9B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +46,10 @@
 		E7360F231DCF4903006EBA9B /* TestGifSendUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestGifSendUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7360F271DCF4903006EBA9B /* TestGifSendUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestGifSendUITests.m; sourceTree = "<group>"; };
 		E7360F291DCF4903006EBA9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7360F321DCF4993006EBA9B /* FBSDKHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBSDKHelper.h; sourceTree = "<group>"; };
+		E7360F331DCF4993006EBA9B /* FBSDKHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBSDKHelper.m; sourceTree = "<group>"; };
+		E7360F351DCF4A5B006EBA9B /* SSControllerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSControllerManager.h; sourceTree = "<group>"; };
+		E7360F361DCF4A5B006EBA9B /* SSControllerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSControllerManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0F5A50D6A6A8887C6685DB0 /* libPods-TestGifSend.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +71,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD235F5A7FA057C07847B6BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B1F8BB5F3A9C0A7B26A26CC /* Pods-TestGifSend.debug.xcconfig */,
+				A79D4AD21165F68E63551690 /* Pods-TestGifSend.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E7360F011DCF4903006EBA9B = {
 			isa = PBXGroup;
 			children = (
 				E7360F0C1DCF4903006EBA9B /* TestGifSend */,
 				E7360F261DCF4903006EBA9B /* TestGifSendUITests */,
 				E7360F0B1DCF4903006EBA9B /* Products */,
+				CD235F5A7FA057C07847B6BC /* Pods */,
+				FFD3AC0E2B9130F82F0C142E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,6 +105,10 @@
 			children = (
 				E7360F101DCF4903006EBA9B /* AppDelegate.h */,
 				E7360F111DCF4903006EBA9B /* AppDelegate.m */,
+				E7360F351DCF4A5B006EBA9B /* SSControllerManager.h */,
+				E7360F361DCF4A5B006EBA9B /* SSControllerManager.m */,
+				E7360F321DCF4993006EBA9B /* FBSDKHelper.h */,
+				E7360F331DCF4993006EBA9B /* FBSDKHelper.m */,
 				E7360F131DCF4903006EBA9B /* ViewController.h */,
 				E7360F141DCF4903006EBA9B /* ViewController.m */,
 				E7360F161DCF4903006EBA9B /* Main.storyboard */,
@@ -111,6 +137,14 @@
 			path = TestGifSendUITests;
 			sourceTree = "<group>";
 		};
+		FFD3AC0E2B9130F82F0C142E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				180BCE99A45AD6A8FB7D402B /* libPods-TestGifSend.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +152,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7360F2C1DCF4903006EBA9B /* Build configuration list for PBXNativeTarget "TestGifSend" */;
 			buildPhases = (
+				B26D7B7852A5CE677CB9F76F /* [CP] Check Pods Manifest.lock */,
 				E7360F061DCF4903006EBA9B /* Sources */,
 				E7360F071DCF4903006EBA9B /* Frameworks */,
 				E7360F081DCF4903006EBA9B /* Resources */,
+				3B27C0D22A5D631E93CFE391 /* [CP] Embed Pods Frameworks */,
+				1A120D4865EF44B3AA21F52A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,6 +245,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1A120D4865EF44B3AA21F52A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestGifSend/Pods-TestGifSend-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B27C0D22A5D631E93CFE391 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestGifSend/Pods-TestGifSend-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B26D7B7852A5CE677CB9F76F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E7360F061DCF4903006EBA9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -215,6 +300,8 @@
 			files = (
 				E7360F151DCF4903006EBA9B /* ViewController.m in Sources */,
 				E7360F121DCF4903006EBA9B /* AppDelegate.m in Sources */,
+				E7360F341DCF4993006EBA9B /* FBSDKHelper.m in Sources */,
+				E7360F371DCF4A5B006EBA9B /* SSControllerManager.m in Sources */,
 				E7360F0F1DCF4903006EBA9B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,6 +436,7 @@
 		};
 		E7360F2D1DCF4903006EBA9B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B1F8BB5F3A9C0A7B26A26CC /* Pods-TestGifSend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestGifSend/Info.plist;
@@ -360,6 +448,7 @@
 		};
 		E7360F2E1DCF4903006EBA9B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A79D4AD21165F68E63551690 /* Pods-TestGifSend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestGifSend/Info.plist;
@@ -410,6 +499,7 @@
 				E7360F2E1DCF4903006EBA9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7360F2F1DCF4903006EBA9B /* Build configuration list for PBXNativeTarget "TestGifSendUITests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +508,7 @@
 				E7360F311DCF4903006EBA9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
